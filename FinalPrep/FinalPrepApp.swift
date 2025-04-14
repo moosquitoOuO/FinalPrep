@@ -1,10 +1,3 @@
-//
-//  FinalPrepApp.swift
-//  FinalPrep
-//
-//  Created by MosquitoOuO on 2025-04-13.
-//
-
 import SwiftUI
 
 @main
@@ -13,5 +6,7 @@ struct FinalPrepApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Tempreture.self)
     }
 }
+

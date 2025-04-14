@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct RowView: View {
+    @Bindable var temp: Tempreture
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("\(temp.tempreture) C")
     }
 }
 
 #Preview {
-    RowView()
+    @Previewable @State var temp = Tempreture(tempreture: 25.5)
+    RowView(temp: temp)
 }
